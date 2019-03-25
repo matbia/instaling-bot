@@ -1,5 +1,6 @@
 # instaling-bot
 Customisable and safe bot for instaling.pl
+
 Looks legit on reports and shouldn't get you blocked.
 
 ## Features
