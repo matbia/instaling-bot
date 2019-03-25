@@ -10,5 +10,6 @@ Looks legit on reports and shouldn't get you blocked.
 * Word length based delay
 
 ## Usage
-Paste the contents of bot.js file into JavaScript console (Ctrl + Shift + J on Chrome, Ctrl + Shift + K on Firefox)
+Paste the contents of bot.js file into JavaScript console (Ctrl + Shift + J on Chrome, Ctrl + Shift + K on Firefox).
+
 If you want to change the delay of some function, edit related variable at the top of the file.
