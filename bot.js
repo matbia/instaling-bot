@@ -1,9 +1,9 @@
 /* Settings - Delay in milliseconds */
-var autoAnswerDelay = 100;
-var autoNextWordDelay = 1000;
-var autoNewWordDelay = 1000;
-var autoSkipDelay = 1000;
-var autoFinishDelay = 1000;
+const autoAnswerDelay = 100;
+const autoNextWordDelay = 1000;
+const autoNewWordDelay = 1000;
+const autoSkipDelay = 1000;
+const autoFinishDelay = 1000;
 
 //Bot menu HTML
 $("#learning_page").append("<div id=\"botMenu\"><b>InstalingBot</b><br><input type=\"checkbox\" name=\"autoAnswer\" id=\"autoAnswer\">Auto Answer <br><input type=\"checkbox\" name=\"autoCheck\" id=\"autoCheck\" checked>Auto Check<br><input type=\"checkbox\" name=\"autoNextWord\" id=\"autoNextWord\" checked>Auto Next Word<br><input type=\"checkbox\" name=\"autoNewWord\" id=\"autoNewWord\" checked>Auto New Word<br><input type=\"checkbox\" name=\"autoSkip\" id=\"autoSkip\" checked>Auto Skip<br><input type=\"checkbox\" name=\"autoFinish\" id=\"autoFinish\" checked>Auto Stop<br></div>");
