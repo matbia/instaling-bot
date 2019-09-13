@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         Insta.Ling bot
+// @namespace    https://github.com/matbia/instaling-bot
+// @version      1.0
+// @description  Automate Insta.Ling sessions
+// @author       matbia
+// @match        https://instaling.pl/*
+// @grant        none
+// ==/UserScript==
+
 /* Settings - Delay in milliseconds */
 const autoAnswerDelay = 100;
 const autoNextWordDelay = 1000;
