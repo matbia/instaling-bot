@@ -12,7 +12,7 @@ $("#learning_page").append("<div id=\"botMenu\"><b>InstalingBot</b><br><input ty
 $("#botMenu").css({"border-color": "#212121", "border-width": "1px", "border-style": "solid", "background-color": "#5FBD57", "margin-top": "30px"});
 
 function getAnswer() {
-    return decodeURIComponent($("#jp_audio_0").attr("src").substring(7).replace(".mp3", ""));
+    return decodeURIComponent($("#jp_audio_0").attr("src").split('/')[6].replace(".mp3", ""));
 }
 
 function getRandomDelay() {
