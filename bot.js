@@ -61,7 +61,7 @@ function getAnswer() {
 }
 
 function getRandomDelay() {
-    return Math.floor(Math.random() * (4000 - 2000)) + 725 * getAnswer().length;
+    return Math.floor(Math.random() * 512) * getAnswer().length + 2048;
 }
 
 //Auto Answer
