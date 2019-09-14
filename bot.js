@@ -57,7 +57,8 @@ $('#learning_page').append(
 );
 
 function getAnswer() {
-    return decodeURIComponent($("#jp_audio_0").attr("src").split('/')[6].replace(".mp3", ""));
+    let src = $('#jp_audio_0').attr('src');
+    return src.substring(src.lastIndexOf('/') + 1, src.length - 4);
 }
 
 function getRandomDelay() {
