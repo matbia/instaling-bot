@@ -68,35 +68,35 @@ function getRandomDelay() {
 //Auto Answer
 window.setInterval(() => {
     if($('input[name="autoAnswer"]:checked').length > 0)
-        $("#answer").val(getAnswer());
+        $('#answer').val(getAnswer());
 }, autoAnswerDelay);
 
 //Auto Check
 window.setInterval(() => {
-    if($('input[name="autoCheck"]:checked').length > 0 && !$("#answer_result").is(":visible") && !$("#summary").is(":visible") && $("#answer").val())
-        $("#check").click();
+    if($('input[name="autoCheck"]:checked').length > 0 && !$('#answer_result').is(':visible') && !$('#summary').is(':visible') && $('#answer').val())
+        $('#check').click();
 }, getRandomDelay());
 
 //Auto Next Word
 window.setInterval(() => {
-    if($('input[name="autoNextWord"]:checked').length > 0 && $("#answer_result").is(":visible") && !$("#summary").is(":visible"))
-        $("#nextword").click();
+    if($('input[name="autoNextWord"]:checked').length > 0 && $('#answer_result').is(':visible') && !$('#summary').is(':visible'))
+        $('#nextword').click();
 }, autoNextWordDelay);
 
 //Auto New Word
 window.setInterval(() => {
-    if($('input[name="autoNewWord"]:checked').length > 0 && $("#new_word_form").is(":visible"))
-        $("#dont_know_new").click();
+    if($('input[name="autoNewWord"]:checked').length > 0 && $('#new_word_form').is(':visible'))
+        $('#dont_know_new').click();
 }, autoNewWordDelay);
 
 //Auto Skip
 window.setInterval(() => {
-    if($('input[name="autoSkip"]:checked').length > 0 && $(".possible_word_msg").is(":visible"))
-        $("#skip").click();
+    if($('input[name="autoSkip"]:checked').length > 0 && $('.possible_word_msg').is(':visible'))
+        $('#skip').click();
 }, autoSkipDelay);
 
 //Auto Finish
 window.setInterval(() => {
-    if($('input[name="autoFinish"]:checked').length > 0 && $("#summary").is(":visible"))
-        $("#return_mainpage").click();
+    if($('input[name="autoFinish"]:checked').length > 0 && $('#summary').is(':visible'))
+        $('#return_mainpage').click();
 }, autoFinishDelay)
