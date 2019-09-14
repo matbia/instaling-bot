@@ -15,11 +15,46 @@ const autoNewWordDelay = 1000;
 const autoSkipDelay = 1000;
 const autoFinishDelay = 1000;
 
-//Bot menu HTML
-$("#learning_page").append("<div id=\"botMenu\"><b>InstalingBot</b><br><input type=\"checkbox\" name=\"autoAnswer\" id=\"autoAnswer\">Auto Answer <br><input type=\"checkbox\" name=\"autoCheck\" id=\"autoCheck\" checked>Auto Check<br><input type=\"checkbox\" name=\"autoNextWord\" id=\"autoNextWord\" checked>Auto Next Word<br><input type=\"checkbox\" name=\"autoNewWord\" id=\"autoNewWord\" checked>Auto New Word<br><input type=\"checkbox\" name=\"autoSkip\" id=\"autoSkip\" checked>Auto Skip<br><input type=\"checkbox\" name=\"autoFinish\" id=\"autoFinish\" checked>Auto Stop<br></div>");
-
-//Set CSS style for bot menu
-$("#botMenu").css({"border-color": "#212121", "border-width": "1px", "border-style": "solid", "background-color": "#5FBD57", "margin-top": "30px"});
+//Menu
+$('#learning_page').append(
+    $('<div>').attr('id', 'botMenu').css({'border': '1px solid #212121', 'background-color': '#5FBD57', 'margin-top': '30px', 'padding': '2px'})
+    .append(
+        $('<input>').attr('type', 'checkbox').attr('name', 'autoAnswer')
+    )
+    .append(
+        $('<span>').text('Auto answer').append($('<br>'))
+    )
+    .append(
+        $('<input>').attr('type', 'checkbox').attr('name', 'autoCheck').prop('checked', true)
+    )
+    .append(
+        $('<span>').text('Auto check').append($('<br>'))
+    )
+    .append(
+        $('<input>').attr('type', 'checkbox').attr('name', 'autoNextWord').text('Auto next word').prop('checked', true)
+    )
+    .append(
+        $('<span>').text('Auto next word').append($('<br>'))
+    )
+    .append(
+        $('<input>').attr('type', 'checkbox').attr('name', 'autoNewWord').text('Auto new word').prop('checked', true)
+    )
+    .append(
+        $('<span>').text('Auto new word').append($('<br>'))
+    )
+    .append(
+        $('<input>').attr('type', 'checkbox').attr('name', 'autoSkipWord').text('Auto skip word').prop('checked', true)
+    )
+    .append(
+        $('<span>').text('Auto skip word').append($('<br>'))
+    )
+    .append(
+        $('<input>').attr('type', 'checkbox').attr('name', 'autoFinishWord').text('Auto finish').prop('checked', true)
+    )
+    .append(
+        $('<span>').text('Auto finish')
+    )
+);
 
 function getAnswer() {
     return decodeURIComponent($("#jp_audio_0").attr("src").split('/')[6].replace(".mp3", ""));
