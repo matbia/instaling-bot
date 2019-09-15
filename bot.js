@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Automate Insta.Ling sessions
 // @author       matbia
-// @match        https://instaling.pl/*
+// @match        https://instaling.pl/ling2/html_app/app.php?*
 // @grant        none
 // ==/UserScript==
 
